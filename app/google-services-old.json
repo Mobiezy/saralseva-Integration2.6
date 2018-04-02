@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "1028872441883",
+    "project_id": "firebase-saral"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028872441883:android:23a68b0a3a230d46",
+        "android_client_info": {
+          "package_name": "mobi.app.saralseva"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGN8ldiw5s2RC3zecVXaSSK9svfe3W0CI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

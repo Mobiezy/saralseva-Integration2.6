@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="mobi.app.saralseva.fragments.MoreFragment"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_langsvg"
+                android:id="@+id/imageView9"
+                android:layout_weight="0.3"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:text="@string/languageselected"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textViewLangSelected"
+                android:layout_weight="0.4"
+                android:gravity="center_vertical" />
+
+
+
+            <Spinner
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:background="@null"
+
+                android:prompt="@string/language_prompt" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.05dp"
+            android:background="@color/bannerBackground"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/layoutTerms"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_termscondsvg"
+                android:id="@+id/imageView2"
+                android:layout_weight="0.3"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:text="@string/termsconditions"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textViewTermsCond"
+                android:layout_weight="0.7"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.05dp"
+            android:background="@color/bannerBackground"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/layoutAboutus"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_aboutus"
+                android:id="@+id/imageView4"
+                android:layout_weight="0.3"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:text="@string/aboutus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textViewAboutUs"
+                android:layout_weight="0.7"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.05dp"
+            android:background="@color/bannerBackground"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:backgroundTintMode="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageView15" />
+
+        <TextView
+            android:text="@string/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewSeralSevaName"
+            android:textSize="14sp"
+            android:gravity="center" />
+
+        <TextView
+            android:text="@string/versionnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewSeralSevaVersion"
+            android:textSize="10sp"
+            android:gravity="center" />
+
+    </LinearLayout>
+</LinearLayout>

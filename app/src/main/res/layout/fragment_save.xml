@@ -1,0 +1,268 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="500dp"
+    android:layout_height="match_parent"
+    tools:context="mobi.app.saralseva.fragments.SaveFragment"
+    android:nestedScrollingEnabled="true"
+    android:layout_marginBottom="56dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="6"
+        android:layout_margin="20dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="1"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/label_profile_gender"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical" />
+
+            <RadioGroup
+                android:id="@+id/gender_grp"
+                android:layout_width="0dp"
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:layout_marginLeft="45dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
+
+
+
+                <RadioButton
+                    android:text="@string/label_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_male"
+                    android:layout_weight="0.5"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:text="@string/label_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_female"
+                    android:layout_weight="0.5"
+                    android:textSize="12sp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="1"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/label_first_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView2"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical" />
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:maxLength="25"
+                android:digits="0123456789qwertzuiopasdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+                android:text=""
+                android:ems="10"
+                android:id="@+id/et_fname"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="1"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/label_last_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView3"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical" />
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:maxLength="25"
+                android:digits="0123456789qwertzuiopasdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+                android:text=""
+                android:ems="10"
+                android:id="@+id/et_lname"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="1"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/label_profile_dob"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView4"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_dob"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:focusable="false"
+                android:textSize="12sp"></android.support.design.widget.TextInputEditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="1"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/label_profile_address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView5"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="textPostalAddress"
+                android:ems="10"
+                android:maxLength="50"
+                android:id="@+id/et_address"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="1"
+android:visibility="gone"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/label_profile_aadhar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView7"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:ems="10"
+                android:maxLength="12"
+                android:id="@+id/et_aadhar"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="1"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/label_phone_number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView11"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="phone"
+                android:ems="10"
+                android:digits="10"
+                android:id="@+id/et_phone"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:enabled="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <Button
+                android:text="@string/label_save"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/btnProfileSave"
+                android:background="@drawable/button_border"
+                android:textSize="12sp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_gravity="center" />
+
+            <!--Button
+            android:text="@string/label_cancel"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:id="@+id/btnProfileCancel"
+            android:background="@drawable/button_border"
+            android:textSize="12sp"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp" /-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

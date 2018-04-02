@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="mobi.app.saralseva.fragments.HomeFragment"
+    android:orientation="vertical">
+
+
+
+    <!-- TODO: Update blank fragment layout  -->
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:foregroundGravity="bottom|right"-->
+        <!--app:backgroundTint="@color/colorPrimary"-->
+        <!--app:elevation="3dp"-->
+        <!--android:tint="@color/white"-->
+        <!--android:src="@drawable/ic_add_black_35dp"-->
+        <!--android:layout_marginBottom="50dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--app:fabSize="mini"-->
+        <!--app:backgroundTintMode="multiply"-->
+        <!--android:layout_gravity="bottom|end" />-->
+
+    <LinearLayout
+        android:id="@+id/linearSubscriptions"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_weight="1">
+
+        <include android:id="@+id/subcribeLayout"
+            layout="@layout/subscribe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.05dp"
+            android:background="@color/bannerBackground"
+            android:elevation="0dp" />
+
+        <TextView
+            android:text="@string/your_subscriptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="@color/menu_color_default"
+            android:textSize="14sp"
+            android:id="@+id/textViewYourSub"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center" />
+
+        <include layout="@layout/content_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_nosubs"
+            android:id="@+id/imageViewNodata"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/there_are_no_vendors_currently_subscribed"
+            android:id="@+id/txtNoSubscription"
+           android:textAlignment="center"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/relativeActionButton"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/linearSubscriptions"-->
+      <!--&gt;-->
+
+        <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:id="@+id/fabHomeBtn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+           <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:backgroundTint="@color/colorPrimary"-->
+            <!--android:layout_margin="@dimen/fab_margin"-->
+            <!--android:src="@drawable/ic_add" />-->
+
+
+    <!--</RelativeLayout>-->
+
+
+        <!--android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabHomeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_add" /-->
+
+
+</LinearLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/planDetailItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/planDetailCardView"
+        android:clickable="false"
+        android:elevation="2dp"
+        android:foreground="@drawable/rippleeffect"
+        app:cardElevation="4dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardMaxElevation="4dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:id="@+id/layerone">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:text="P"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_plancaptions"
+                        android:id="@+id/textViewInitial"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:text="TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/textViewPlanName"
+                        android:layout_weight="0.5"
+                        android:elevation="0dp"
+                        android:textSize="14sp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/cb_blue_button" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.05dp"
+                        android:background="@color/bannerBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_marginTop="5dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:paddingLeft="2dp">
+
+                            <TextView
+                                android:text="@string/lable_base_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView24"
+                                android:layout_weight="0.5"
+                                android:elevation="0dp"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textViewBasePrice"
+                                android:layout_weight="0.5"
+                                android:elevation="0dp"
+                                android:textSize="12sp"
+                                android:textColor="@color/cardview_dark_background" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:paddingLeft="2dp">
+
+                            <TextView
+                                android:text="@string/lable_tax"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView19"
+                                android:layout_weight="0.5"
+                                android:elevation="0dp"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textViewTax"
+                                android:layout_weight="0.5"
+                                android:elevation="0dp"
+                                android:textSize="12sp"
+                                android:textColor="@color/cardview_dark_background" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:paddingLeft="2dp">
+
+                            <TextView
+                                android:text="@string/label_total"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/textView17"
+                                android:layout_weight="0.5"
+                                android:elevation="0dp"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/textViewTotal"
+                                android:layout_weight="0.5"
+                                android:elevation="0dp"
+                                android:textSize="12sp"
+                                android:textColor="@color/cardview_dark_background" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/colorPrimary"
+                    app:srcCompat="@drawable/ic_touch_app_black_24dp"
+                    android:id="@+id/imgvw_plan_request"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center" /-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+
+                        <!--android:text="Request"/>-->
+
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/requestPlanCardView"-->
+        <!--android:clickable="true">-->
+
+        <!--<TextView-->
+            <!--android:text="Request Plan"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/textView2"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:textColor="@color/colorPrimary" />-->
+    <!--</android.support.v7.widget.CardView>-->
+
+</LinearLayout>
+

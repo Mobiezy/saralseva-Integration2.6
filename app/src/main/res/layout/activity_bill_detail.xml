@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="mobi.app.saralseva.activities.BillDetailActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar5" >
+        <include layout="@layout/nav_toolbar"/>
+        </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+    android:id="@+id/activity_bill_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar5">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="0.3"
+        android:background="@drawable/border_buttton"
+        android:gravity="bottom"
+        android:weightSum="1"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:weightSum="1"
+            android:paddingTop="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textViewCurrBill"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="₹ 500"
+                android:layout_weight="0.5"
+                android:gravity="bottom|center_horizontal" />
+
+            <TextView
+                android:text="@string/bill_current_balance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textViewCurrBillLabel"
+                android:layout_weight="0.5"
+                android:gravity="top|center_horizontal" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="50dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:weightSum="1"
+        android:layout_weight="1"
+        android:background="@color/cardview_dark_background">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:elevation="2dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            android:text="@string/bill_current_plan"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/textViewCP"
+                            android:layout_weight="0.5"
+                            android:textColor="@color/c4" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/txtCurrentPlan"
+                            android:layout_weight="0.5"
+                            android:text="-" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.5"
+                        android:id="@+id/layoutSetbox">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:baselineAligned="false">
+
+                            <TextView
+                                android:text="@string/bill_set_up_box_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/textViewSSN"
+                                android:layout_weight="1"
+                                android:textColor="@color/c4"
+                                android:gravity="right"
+                                android:layout_marginRight="2dp" />
+
+                            <TextView
+                                android:text=""
+                                android:textColor="#FFF"
+                                android:textSize="10sp"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:id="@+id/txtSetTopBoxBadge"
+                                android:background="@drawable/badgescount"
+                                android:gravity="center" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/txtSetupBoxNum"
+                            android:layout_weight="0.5"
+                            android:text=""
+                            android:gravity="right" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.05dp"
+                    android:background="@color/bannerBackground" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:layout_weight="0.1">
+
+                        <TextView
+                            android:text="@string/bill_prev_due"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/textViewPDD"
+                            android:layout_weight="0.5"
+                            android:textColor="@color/c4"
+                            android:gravity="left|center"
+                            android:textSize="14sp"
+                            android:paddingRight="10dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/txtPrevDue"
+                            android:layout_weight="0.5"
+                            android:text="-"
+                            android:gravity="right|center"
+                            android:textSize="14sp"
+                            android:paddingLeft="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:layout_weight="0.1">
+
+                        <TextView
+                            android:text="@string/bill_tax"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/textViewT"
+                            android:layout_weight="0.5"
+                            android:textColor="@color/c4"
+                            android:gravity="left|center"
+                            android:textSize="14sp"
+                            android:paddingRight="10dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/txtTax"
+                            android:layout_weight="0.5"
+                            android:text="-"
+                            android:gravity="right|center"
+                            android:textSize="14sp"
+                            android:paddingLeft="10dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:layout_weight="0.1">
+
+                        <TextView
+                            android:text="@string/bill_current_month_amount"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/textViewlastmonth"
+                            android:layout_weight="0.5"
+                            android:textColor="@color/c4"
+                            android:gravity="left|center"
+                            android:textSize="14sp"
+                            android:paddingRight="10dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/txtLastmonthamt"
+                            android:layout_weight="0.5"
+                            android:text=""
+                            android:gravity="right|center"
+                            android:textSize="14sp"
+                            android:paddingLeft="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.7">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/ic_billstamp"
+                                android:id="@+id/imageView16"
+                                android:alpha="0.5" />
+
+                            <Button
+                                android:text="@string/history"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:id="@+id/ButtonBillHistory"
+                                android:background="@drawable/button_border_blue"
+                                android:textSize="12sp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:textColor="@color/cb_dark_blue_button" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txtTotalDue"
+                                android:text="-"
+                                android:textSize="24sp"
+                                android:textColor="@color/cb_dark_blue_button"
+                                android:layout_centerHorizontal="false"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp" />
+
+                            <TextView
+                                android:text="@string/bill_current_balance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textViewTO"
+                                android:textColor="@color/cb_dark_blue_button"
+                                android:textSize="24sp"
+                                android:layout_centerHorizontal="false"
+                                android:layout_centerInParent="true"
+                                android:layout_above="@+id/txtTotalDue" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.05dp"
+                    android:background="@color/bannerBackground" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:text="@string/bill_last_collected_amount"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/textViewLCA"
+                            android:layout_weight="0.5"
+                            android:textColor="@color/c4"
+                            android:textSize="12sp"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/txtLastCollectedAmt"
+                            android:layout_weight="0.5"
+                            android:text="-"
+                            android:textSize="10sp"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:text="@string/bill_last_collected_date"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/textViewLCD"
+                            android:layout_weight="0.5"
+                            android:textColor="@color/c4"
+                            android:textSize="12sp"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/txtLastCollectedDate"
+                            android:layout_weight="0.5"
+                            android:text="-"
+                            android:textSize="10sp"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
+</RelativeLayout>

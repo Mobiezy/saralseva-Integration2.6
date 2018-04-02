@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:gravity="bottom"
+    android:background="@color/white">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.05dp"
+        android:background="@color/bannerBackground"
+         />
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="bottom"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:clickable="true"
+            android:background="@drawable/rippleeffect"
+            android:id="@+id/linLayHome"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivHome"
+                app:srcCompat="@drawable/ic_homesvg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:tint="@color/colorPrimaryDark"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:text="@string/home"
+                android:id="@+id/tvHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:gravity="bottom|center"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/rippleeffect"
+            android:clickable="true"
+            android:id="@+id/linLayProfile"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                app:srcCompat="@drawable/ic_profilesvg"
+                android:tint="@color/colorPrimaryDark"
+                android:id="@+id/ivProfile" />
+
+            <TextView
+                android:text="@string/profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:gravity="bottom|center"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/tvProfile" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:clickable="true"
+            android:background="@drawable/rippleeffect"
+            android:id="@+id/linLayNotify"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                app:srcCompat="@drawable/ic_notifysvg"
+                android:tint="@color/colorPrimaryDark"
+                android:id="@+id/ivNotify" />
+
+            <TextView
+                android:text="@string/notification"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:gravity="bottom|center"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/tvNotify" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:clickable="true"
+            android:background="@drawable/rippleeffect"
+            android:id="@+id/linLayMore"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                app:srcCompat="@drawable/ic_moresvg"
+                android:tint="@color/colorPrimaryDark"
+                android:id="@+id/ivMore" />
+
+            <TextView
+                android:text="@string/more"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:gravity="bottom|center"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/tvMore" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

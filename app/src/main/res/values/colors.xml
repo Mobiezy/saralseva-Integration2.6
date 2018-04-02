@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3cb878</color>
+    <color name="colorPrimaryDark">#969191</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="red">#FF0000</color>
+    <color name="white">#ffffff</color>
+    <color name="menu_color_default">#bdbdbd</color>
+    <color name="menu_color_pressed">#9E9E9E</color>
+    <color name="menu_color_focused">#757575</color>
+    <color name="menu_color_selected">#616161</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="black">#000000</color>
+    <color name="bannerBackground">#ebebeb</color>
+    <color name="bottomBakground">#09ebebeb</color>
+    <color name="splashcolor">#5E5E5E</color>
+    <color name="c1">#eaeaea</color>
+    <color name="c2">#e7e7e7</color>
+    <color name="c3">#FFFFFF</color>
+    <color name="c4">#1e76ba</color>
+    <color name="c5">#079247</color>
+    <color name="c6">#f59220</color>
+    <color name="badgeCount">#31b0d5</color>
+    <color name="badgeCountBorder">#46b8da</color>
+</resources>

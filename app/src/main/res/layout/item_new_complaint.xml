@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup android:layout_width="match_parent"
+    android:id="@+id/radioGroupNewComplaint"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="20dp">
+
+    <!--<RadioButton-->
+        <!--android:text="RadioButton"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/radioButtonNewComplaint1"-->
+        <!--android:layout_weight="1" />-->
+<!--<RadioButton-->
+<!--android:text="RadioButton"-->
+<!--android:layout_margin="10dp"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:id="@+id/radioButtonNewComplaint2"-->
+<!--android:layout_weight="1" />-->
+
+    <!--<RadioButton-->
+<!--android:text="RadioButton"-->
+<!--android:layout_margin="10dp"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:id="@+id/radioButtonNewComplaint3"-->
+<!--android:layout_weight="1" />-->
+    <!--<RadioButton-->
+<!--android:text="RadioButton"-->
+<!--android:layout_margin="10dp"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:id="@+id/radioButtonNewComplaint4"-->
+        <!--android:visibility="gone"-->
+<!--android:layout_weight="1" />-->
+
+</RadioGroup>

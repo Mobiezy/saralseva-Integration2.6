@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:id="@+id/serviceLayout">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="0dp"
+                    app:srcCompat="@drawable/ic_serviceissuesvg"
+                    android:id="@+id/imageViewService"
+                    android:layout_weight="0.8"
+                    android:clickable="false" />
+
+                <TextView
+                    android:text="@string/complaint_type_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/textViewService"
+                    android:layout_weight="0.2"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:id="@+id/billingLayout">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="0dp"
+                    app:srcCompat="@drawable/ic_billissuesvg"
+                    android:id="@+id/imageViewBilling"
+                    android:layout_weight="0.8"
+                    android:clickable="false" />
+
+                <TextView
+                    android:text="@string/complaint_type_billing"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/textViewBilling"
+                    android:layout_weight="0.2"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:id="@+id/paymentLayout">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="0dp"
+                    app:srcCompat="@drawable/ic_payissuesvg"
+                    android:id="@+id/imageViewPayment"
+                    android:layout_weight="0.8"
+                    android:clickable="false" />
+
+                <TextView
+                    android:text="@string/complaint_type_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/textViewPayment"
+                    android:layout_weight="0.2"
+                    android:gravity="center" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/newComplaintRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:inputType="textPersonName"
+        android:hint="@string/comments"
+        android:ems="10"
+        android:id="@+id/etComments" />
+
+    <Button
+        android:text="@string/submit"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSubmit" />
+
+</LinearLayout>

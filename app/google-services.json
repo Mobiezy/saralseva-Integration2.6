@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "946804308958",
+    "firebase_url": "https://saral-6adf7.firebaseio.com",
+    "project_id": "saral-6adf7",
+    "storage_bucket": "saral-6adf7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946804308958:android:23a68b0a3a230d46",
+        "android_client_info": {
+          "package_name": "mobi.app.saralseva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946804308958-f9onavdfvfds57vu7b2f7oq06q74kt2f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mobi.app.saralseva",
+            "certificate_hash": "4f85d9fbd84be24b7302365f22ea9396687a98d4"
+          }
+        },
+        {
+          "client_id": "946804308958-c1c6mph06bq11lmp3hlhsn14p7giil59.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mobi.app.saralseva",
+            "certificate_hash": "3585e18ee558654853279ae45871a50c5a34032b"
+          }
+        },
+        {
+          "client_id": "946804308958-2i6mh8hq5ff5g04iti3nbd79qetj4baf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArVlIvpVmE8XWp9vlJ2MbGcm4_Wc5OYkA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946804308958-2i6mh8hq5ff5g04iti3nbd79qetj4baf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

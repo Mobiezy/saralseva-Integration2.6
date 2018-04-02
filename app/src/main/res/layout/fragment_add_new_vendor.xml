@@ -1,0 +1,168 @@
+<android.support.design.widget.CoordinatorLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:padding="40dp"
+    tools:context="mobi.app.saralseva.fragments.AddNewVendorFragment"
+    android:weightSum="1">
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12"
+                android:textSize="10sp"
+                android:text="You can add Services like paper, milk, cable.. etc"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/news_services"
+                    android:id="@+id/imageView13"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_milkservices"
+                    android:id="@+id/imageView11"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_cable_service_svg"
+                    android:id="@+id/imageView10"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_addvendor_alert"
+                android:textSize="12sp"
+                android:text=""
+                android:textColor="@color/red" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+            tools:context="mobi.app.saralseva.fragments.AddNewVendorFragment"
+        android:weightSum="1">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <EditText
+            android:id="@+id/et_addvendor_mobnum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/edittext_hint_mobile_num"
+            android:textSize="14sp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:drawableLeft="@drawable/ic_searchphone"
+            android:drawablePadding="10dp"
+            android:layout_weight="0.9"
+            android:phoneNumber="true"
+            android:maxLength="10"
+            android:inputType="phone" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:tint="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_check_circle_black_24dp"
+            android:id="@+id/imageViewAddPhone"
+            android:layout_weight="0.1"
+            android:layout_gravity="center" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linear_OTP_section"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_margin="5dp">
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edittext_OTP"
+                android:textSize="14sp"
+                android:inputType="phone"
+                android:hint="Please enter the OTP.."
+                android:textColor="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_resend_otp"
+                    android:text="Resend"
+                    android:enabled="false"
+                    android:layout_weight="0.5"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_verify_otp"
+                    android:text="Verify"
+                    android:layout_weight="0.5"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
+

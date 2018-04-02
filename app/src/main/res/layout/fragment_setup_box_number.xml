@@ -1,0 +1,38 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="mobi.app.saralseva.SetupBoxNumberFragment"
+    android:padding="20dp">
+
+    <!-- TODO: Update blank fragment layout -->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="@string/setopbox_numbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewHeader"
+        android:gravity="center" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.05dp"
+        android:clickable="false"
+        android:background="@color/bannerBackground"
+        android:id="@+id/dividerBox"
+        android:layout_below="@+id/textViewHeader"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/txtSetTopNum"
+        android:layout_below="@+id/dividerBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+         />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
